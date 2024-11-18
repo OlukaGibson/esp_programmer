@@ -335,7 +335,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_02x04_Top_Bottom"
+		(symbol "Connector_Generic:Conn_02x04_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -349,7 +349,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x04_Top_Bottom"
+			(property "Value" "Conn_02x04_Odd_Even"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -375,7 +375,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -402,7 +402,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x04_Top_Bottom_1_1"
+			(symbol "Conn_02x04_Odd_Even_1_1"
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
@@ -521,7 +521,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -539,7 +539,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -557,7 +557,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -575,7 +575,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -593,7 +593,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at 7.62 -2.54 180)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -611,7 +611,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -1686,16 +1686,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 127) (xy 116.84 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a65eca1a-ab21-45e9-9cdd-75a561e2a751")
-	)
-	(wire
-		(pts
 			(xy 96.52 129.54) (xy 100.33 129.54)
 		)
 		(stroke
@@ -1813,6 +1803,16 @@
 			(type default)
 		)
 		(uuid "f04c836f-325e-470c-8623-8c85c303a0c8")
+	)
+	(wire
+		(pts
+			(xy 113.03 127) (xy 116.84 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4a87d52-0621-476b-a84a-aba3b0865c55")
 	)
 	(rectangle
 		(start 121.92 114.3)
@@ -2089,17 +2089,6 @@
 		)
 		(uuid "95a5c48b-62d0-4521-88b6-9506542c3e8f")
 	)
-	(label "EN"
-		(at 114.3 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left bottom)
-		)
-		(uuid "9655f4ae-cf46-4a0a-8fbf-fa3d6a290162")
-	)
 	(label "gnd"
 		(at 101.6 121.92 0)
 		(fields_autoplaced yes)
@@ -2165,6 +2154,17 @@
 			(justify left bottom)
 		)
 		(uuid "d73fa1fe-224d-4288-938f-1cb3bfe97422")
+	)
+	(label "3v3"
+		(at 114.3 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3c9fca2-651f-4d06-9aa4-9719dd7d62f3")
 	)
 	(label "rx2tx"
 		(at 168.91 133.35 0)
@@ -2381,7 +2381,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x04_Top_Bottom")
+		(lib_id "Connector_Generic:Conn_02x04_Odd_Even")
 		(at 105.41 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2423,7 +2423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 105.41 127 0)
 			(effects
 				(font
